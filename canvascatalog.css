@@ -1,492 +1,373 @@
-Custom CSS
-/*show Categories button on sub catalog*/
+/*HEADER*/
 
-#search-form.callout-region {
-background-color: #135eab !important;
-}
-
-.search-categories-button {
-visibility: visible;
-}
-
-#search-form .search-label,
-#search-form .search-box-wrapper {
-    visibility: visible;
-}
-
-search-refine-button__contents {
-   display: none;
-}
-
-search-refine-button__text {
-   display: none;
-}
-
-#search-refine-button--refine {
-    display: inline-block;
-}
-
-#search-refine-button--categories {
-    display: inline-block;
-}
-
-/*Modify the home page feature area background*/
-#home-page .feature-region {
-  height:  400px;
-  margin: auto;
-  background-image: url("http://wid.mccinfo.net/catalog/trainingandcertificationbanner.svg");
-  background-size:  cover;
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-color: #97aed2;
- }
-
-.btn.btn-info.Products__LoadMore {
-background-color: #135eab;
-border-color: #135eab;
-}
-
-.product-tile.product-footer {
-color: #135eab;
-}
-
-/*Modify the layout for the contents of the feature area background*/
-#home-page #feature div {
-  max-width: 1000px;
-  padding-top: 48px;
-  margin: auto;
-  color: #97aed2;
-}
-
-
-/*Modify the H3 text style in the feature area. Add actual text via JavaScript */
-#home-page #feature h3 {
-  text-align: center;
-  font-size: 2.3em;
-  margin-top: 1em;
-  line-height: 1;
-}
-
-/*Modify the H4 text style in the feature area. Add actual text via JavaScript */
-#home-page #feature h4 {
-  text-align: center;
-  font-size: 1.9em;
-}
-/*Button CSS Start*/
-
-/*a.button {
-display: inline-block;
-text-decoration: none;
-border: 2px solid #135eab;
-padding: 10px;
-color: #fff !important;
-background-color: #135eab;
-font-size: inherit;
-font-weight: bold;
-letter-spacing: 1px;
-text-transform: uppercase;
-box-shadow: 0px 3px 6px #000;
-font-family: inherit;
-width: 150px;
-text-align: center;
-}
-
-a.button:hover {
- background-color: initial;
- color: #135eab !important;
- text-decoration: none;
-}
-
-.btn-container {
-text-align: center;
-width: 60vw;
-position: relative;
-left: calc(-50vw + 127.5%);
-}
-
-a.contact-btn {
-display: inline-block;
-}*/
-/* Button CSS End */
-
-/*Accordion CSS is for drop-down course menu on the listings*/
-.accordion span {
-color: #333333;
-}
-
-.accordion span:hover,
-.accordion span:hover::after {
-  cursor: pointer;
+/*Modify the header background for all catalog pages.*/
+#app-header {
+    padding: 0;
+    height: 100px;
+    background-color: #fff;
   }
-
-.accordion .content {
-  opacity: 0;
-  padding: 0 1rem;
-  max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  color: #0000EE;
-}
-
-.new-layout .course-information .accordion-item a.link {
-color: #0000EE;
-}
-
-.new-layout .course-information .accordion-item a {
-color: #333333;
-}
-
-.accordion .content p {
-  font-weight: 300;
-}
-.accordion .content p {
-  font-weight: 300;
-}
-.accordion .content.active {
-  opacity: 1;
-  padding: 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease-out;
-  -o-transition: all 0.35s ease-out;
-  transition: all 0.35s ease-out;
-}
-
-.span {
-}
-
-/*Hide dates, price, and free flag*/
-
-.product-dates {
-display: none;
-}
-
-.jqFlag {
-display: none;
-}
-
-/*Hide enrollment message on listing and self-paced*/
-.ProductEnrollment__Notice {
-	display: none;
-}
-
-.hero-region p {
-          display: none;
-}
-
-.new-layout .course-information a {
-	color: #000;
-}
-
-/*Working as of 05/09/2016*/
-/* New listing layout */
-.new-layout p {
-	line-height: 1.25;
-}
-
-.new-layout .course-information a {
-	color: #0000FF;
-}
-
-.read-more {
-	font-family: 'proxima nova bold', arial, sans-serif;
-	cursor: pointer;
-}
-
-.more-text{
-	display: none;
-}
-
-.new-layout .jqFlag { display: none; }
-
-.new-layout .hero-head.h1 {
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 50px;
-	text-transform: uppercase;
-}
-
-.new-layout .hero-region p {
-	font-family: "proxima nova thin", arial, sans-serif;
-	font-size: 19px;
-}
-
-.new-layout .product-bg {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.new-layout .product-image .btn.btn-info.btn-lg {
-	background-color: rgba(255,255,255,.30);
-	border-radius: 0;
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 25px;
-	border: 1px solid rgb(255,255,255);
-	line-height: 50px;
-	padding: 0;
-	height: 50px;
-	width: 200px;
-}
-
-.new-layout .product-image input.btn.btn-info.btn-lg {
-	font-size: 18px;
-}
-
-.new-layout.dk .product-image .btn.btn-info.btn-lg {
-	color: rgb(88,89,91);
-	background-color: rgba(255,255,255,.60);
-}
-
-a.btn.btn-info.btn-lg.btn-action {
-  color: rgb(255,255,255);
-}
-
-.ProductEnrollment__Notice {
-	font-size: 14px;
-	color: rgb(70,70,70);
-}
-
-td {
-padding: 10px;
-}
-
-.col-md-7 {
-width: 500px;
-}
-
-#product-page footer .h2 { font-style: normal; }
-
-.new-layout footer.callout-region .btn.btn-info.btn-lg.btn-action {
-	background: transparent;
-	border-radius: 0;
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 19px;
-	border: 1px solid;
-	line-height: 40px;
-	padding: 0;
-	height: 40px;
-	width: 145px;
-}
-
-.new-layout footer.callout-region {
-	background-color: rgb(109,110,113);
-	color: rgb(0,0,0);
-	padding: 50px 0;
-}
-
-.new-layout footer.callout-region h3 {
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 25px;
-	text-transform: uppercase;
-}
-
-.new-layout .main-column h3,
-.new-layout .side-column h3 {
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 21px;
-	text-transform: uppercase;
-	color: rgb(70,70,70);
-	border-bottom: 1px solid;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-	margin-top: 21px;
-}
-
-.new-layout .instructor {
-	height: 120px;
-	width: 120px;
-}
-
-.new-layout .instructor-info {
-	border-bottom: solid 1px;
-    padding-bottom: 25px;
-    margin-bottom: 0px;
-}
-
-.new-layout .instructor-container > div:first-of-type {
-	display: flex;
-	margin-bottom: 20px;
-}
-
-.new-layout .instructor-name { align-self: flex-end; }
-
-.new-layout .instructor-name h4 {
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 16px;
-	text-transform: uppercase;
-	color: rgb(70,70,70);
-	margin-bottom: 0;
-	margin-left: 15px;
-}
-
-.new-layout .instructor-name p {
-	font-family: "proxima nova light", arial, sans-serif;
-	font-size: 12px;
-	text-transform: none;
-	display: block;
-	margin: 0;
-	margin-left: 15px;
-}
-
-.new-layout img.product-account-logo {
-	height: 100px;
-}
-
-
-.new-layout .detail-blocks {
-	justify-content: flex-start;
-	margin-top: 5px;
-}
-
-.new-layout .detail-blocks div {
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 35px 10px 0;
-	height: 95px;
-	width: 130px;
-	text-align: center;
-	background-color: rgb(230,231,232);
-	background-image: url(http://pub-images.canvasnetwork.com/background_course-details.gif);
-	background-repeat: no-repeat;
-	background-position: -35px 0;
-}
-
-.new-layout .detail-blocks div.detail-duration { background-position: -235px 0; }
-.new-layout .detail-blocks div.detail-commitment { background-position: -440px 0; }
-.new-layout .detail-blocks div.detail-requirement { background-position: -35px -105px; }
-.new-layout .detail-blocks div.detail-type { background-position: -235px -105px; }
-.new-layout .detail-blocks div.detail-credential { background-position: -440px -105px; }
-
-.new-layout .detail-blocks h5 {
-	font-family: "proxima nova bold", arial, sans-serif;
-	font-size: 13px;
-	margin: 0;
-	color: rgb(70,70,70);
-}
-.new-layout .detail-blocks h3 {
-font-weight: 700;
-}
-
-
-.new-layout .detail-blocks p {
-	font-family: "proxima nova light", arial, sans-serif;
-	font-size: 14px;
-}
-
-.new-layout .product-account-logo {
-        display: block;
-        margin: 16px auto;
-}
-
-.new-layout .additional-logos img {
-       max-width: 150px;
-}
-
-.new-layout .course-information a {
-color: #135eab;
-font-weight: 700;
-}
-
-@media screen and (max-width: 991px) {
-	.new-layout .product-bg {
-		padding-top: 25px;
-		padding-bottom: 40px;
-	}
-
-	.new-layout .detail-blocks {
-		max-width: 420px;
-		margin: auto;
-	}
-}
-
-@media screen and (max-width: 990px) {
-	.new-layout .instructor-info > div:first-child { justify-content: flex-start; }
-	.new-layout .instructor { margin-right: 20px; }
-}
-
-@media screen and (max-width: 614px) {
-	.new-layout .detail-blocks {
-		width: 340px;
-		margin: auto;
-	}
-
-	.new-layout .detail-blocks div {
-		width: 140px;
-		background-position: -30px 0;
-	}
-
-	.new-layout .detail-blocks div.detail-duration { background-position: -230px 0; }
-	.new-layout .detail-blocks div.detail-commitment { background-position: -435px 0; }
-	.new-layout .detail-blocks div.detail-requirement { background-position: -30px -105px; }
-	.new-layout .detail-blocks div.detail-type { background-position: -230px -105px; }
-	.new-layout .detail-blocks div.detail-credential { background-position: -435px -105px; }
-}
-
-/*Accordion CSS for Unity Listing*/
-.accordion a {
-				position: relative;
-				display: -webkit-box;
-				display: -webkit-flex;
-				display: -ms-flexbox;
-				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				color: #333333
-				font-size: 14px;
-				padding-bottom: 10px;
-                                line-height: 1.25;
-			}
-
-			.accordion a:hover,
-			.accordion a:hover::after {
-				cursor: pointer;
-				color: #333333;
-                                text-decoration: none;
-			}
-
-			.accordion a::after {
-				content: ' ⯆';
-				position: absolute;
-				float: right;
-                                right: 0rem;
-				font-size: 14px;
-				color: #000;
-				width: 30px;
-				height: 30px;
-				text-align: right;
-			}
-
-			.accordion a.active::after {
-				content: " ⯅";
-				color: #333333;
-			}
-
-			.accordion .content {
-				opacity: 0;
-				max-height: 0;
-				border-bottom: 1px solid #333333;
-                                margin-bottom: 5px;
-				overflow: hidden;
-				clear: both;
-				-webkit-transition: all 0.2s ease-out;
-				-o-transition: all 0.2s ease-out;
-				transition: all 0.2s ease-out;
-                                color: #333333;
-			}
-
-			.accordion .content p {
-				font-size: 14px;
-				}
-
-			.accordion .content.active {
-				opacity: 1;
-				max-height: 100%;
-				-webkit-transition: all 0.35s ease-out;
-				-o-transition: all 0.35s ease-out;
-				transition: all 0.35s ease-out;
-			}
+  /* Working Code as of 4/14/2016 */
+  
+  /* This helps you change the color of the header bar incase you want white links
+  #app-header {
+      padding:4px 0 5px;
+      background-color:#414042;
+  }
+  */
+  #app-header h1 {
+      margin:10px 0;
+  }
+  .product-tile:hover {
+  box-shadow: inset 0px -5px 0px #1d5fab !important;
+  }
+  
+  /* user-nav includes changes to the Login / User information link */
+  #user-nav {
+      padding-top:25px;
+  }
+  #user-nav > a {
+      display:inline-block;
+      margin-bottom:0;
+      font-weight:normal;
+      text-align:center;
+      vertical-align:middle;
+      cursor:pointer;
+      background-image:none;
+      border:1px solid transparent;
+      white-space:nowrap;
+      padding:5px 10px;
+      font-size:14px;
+      line-height:1.428571429;
+      border-radius:4px;
+      -webkit-user-select:none;
+      color:#1d5fab;
+  }
+  
+  #user-nav > a:hover {
+      text-decoration:none;
+      color:#e63d2f;
+  }
+  /* Active Color of Login button once logged in */
+  
+  .header-nav li a {
+      color:#1d5fab;
+  }
+  
+  /* Page Links refers to the custom links */
+  #page-links {
+      display:inline-block;
+  }
+  
+  #page-links a {
+      display:inline-block;
+      padding-right: 10px;
+      font-size:14px;
+      color:#1d5fab;
+  }
+  #page-links a:hover,
+  .btn-link:hover,
+  .btn-link {
+      color:#1d5fab;
+  }
+  
+  #page-links .piped-list>li:after {
+      content:"|";
+      color:#1d5fab;
+  }
+  #page-links .piped-list>li:before {
+      display:none;
+      margin-right:0;
+  }
+  
+  /* Modify the layout of the header contents*/
+  #app-header .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  
+  /*Modify the account logo in the header*/
+  /*any header logo uploaded in a catalog will override this option*/
+  #app-header .logo a {
+    background-size: 212px 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    width: 212px;
+    height: 53px;
+  }
+  
+  /*HOME PAGE*/
+  
+      
+  /* Carousel object CSS */
+  .carousel-inner .item img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+  /*Color of the inactive carousel dots*/
+  .carousel-indicators li {
+       border: 1px solid #1d5fab;
+       background-color: #fff;
+  }
+  
+  /*Color of the active carousel dot*/
+  .carousel-indicators .active {
+     background-color: #1d5fab;
+  }
+  
+  /*remove background image*/
+  .feature-region {
+      background-image: none;
+  }
+  
+  /*Hide Categories button on root catalog*/
+  .search-categories-button {
+  visibility: collapse;
+  }
+  
+  /*Modify the home page feature area background*/
+  #home-page .feature-region {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    background-image: none;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    }
+  
+  /*Modify the layout for the contents of the feature area background*/
+  #home-page #feature div {
+    max-width: auto;
+    margin: auto;
+    color: #c6d7e9;
+  }
+  
+  /*Modify the H3 (includes Carousel caption text) text style in the feature area. Add actual text via JavaScript */
+  #home-page #feature h3 {
+    text-align: center;
+    font-size: 3.6em;
+    color: #1d5fab;
+    margin-top: 1em;
+    line-height: 1;
+    position: relative;
+    bottom: 75px;
+    text-shadow: 1px 1px #fff;
+  }
+  
+  /*Modify the H4 text style in the feature area. Add actual text via JavaScript */
+  #home-page #feature h4 {
+    text-align: center;
+    font-size: 1.9em;
+  }
+  
+      
+  /*Working as of November 2, 2018*/
+  
+  #search-form .search-label,
+  #search-form .search-box-wrapper {
+      visibility: hidden;
+  }
+  
+  #search-refine-button--refine {
+      display: none;
+  }
+  
+  ::placeholder {
+      color: #9f9f9f !important;
+  }
+  
+  #search-form.callout-region {
+    background-color: #1d5fab;
+  }
+  
+  
+  /*Modify the layout for account logo on product tile. Add logo in managed accounts area.*/
+  .product-tile .product-account-image-wrapper {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /*LISTING PAGE*/
+  
+  /* Controls size of MCCWID logo on listings */
+  .product-account-logo[src*=".svg"] {
+   min-height: 100px;
+  }
+  
+  /*Format the listing page feature area background*/
+  #product-page #feature {
+      background: #1d5fab;
+      padding-top: 20px
+  }
+  
+  /*Format the background inside the feature area*/
+  .product-bg {
+    background-color: #c6d7e9;
+  }
+  
+  /*Format the account logo under feature area; same logo on Home Page*/
+  .product-tile .product-account-logo {
+    height: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /*To hide the account logo on listing page, use code below instead and remove /* */ around code*/
+  /*.product-tile .product-account-logo {
+    display: none;
+  }
+  */
+  
+  /*Format the full course or program description area*/
+  #main {
+   color: #0899D3;
+  min-height: 150px;
+  }
+  
+  /* Modify the listing page footer background*/
+  .callout-region {
+    background-color: #1d5fab;
+  }
+  
+  /*Format the listing page footer text layout*/
+  #product-page footer .h2 {
+    font-style: normal
+    margin: 15px 0
+    color: #ffffff
+    font-size: 25px;
+  }
+  
+  /*Working as of 05/09/2016*/
+  /* New listing layout */
+  .new-layout p {
+      line-height: 1.25;
+  }
+  
+  .read-more {
+      font-family: 'proxima nova bold', arial, sans-serif;
+      cursor: pointer;
+  }
+  
+  .more-text {
+      display: none;
+  }
+  
+  .ProductEnrollment__Notice {
+      font-size: 14px;
+      color: rgb(70,70,70);
+  }
+  
+  .product-price {
+  display:  none;
+  }
+  
+  .strong {
+  display: none;
+  }
+  
+  /*Button CSS Start*/
+  
+  a.button {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #1d5fab;
+  padding: 10px;
+  color: #fff !important;
+  background-color: #1d5fab;
+  font-size: inherit;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 6px #000;
+  font-family: inherit;
+  width: 150px;
+  text-align: center;
+  }
+  
+  a.button:hover {
+   background-color: initial;
+   color: #1d5fab !important;
+   text-decoration: none;
+  }
+  
+  .btn-container {
+  text-align: center;
+  width: 60vw;
+  position: relative;
+  left: calc(-50vw + 127.5%);
+  }
+  
+  a.contact-btn {
+  display: inline-block;
+  }
+  /* Button CSS End */
+  
+  #product-page footer .h2 { font-style: normal; }
+  
+  /*light blue border on listing*/
+  * {
+          outline: none;
+  }
+  
+  /*FOOTER*/
+  
+  /*Format the footer for all catalog pages*/
+  #app-footer{
+    background-color: #1d5fab;
+  }
+  
+  #app-footer a, #app-footer ul {
+    background-color: #1d5fab;
+    padding-top: 15px;
+    font-size:  14px;
+    color: #ffffff;
+  }
+  
+  .piped-list>li:before {
+      margin-right: 8px;
+      content: "|";
+      color: #ffffff;
+  }
+  
+  /*Format the second row of copyright information*/
+  .small {
+    background-color: #1d5fab;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  /*MEDIA FORMATTING rules for responsive devices. This coding is optional but helpful for tablets and mobile devices.*/
+  
+  /*Media for header*/
+  
+  @media (max-width: 768px) {
+    #app-header .header-nav {
+      background: #ffffff;
+  }
+  }
+  
+  */Media for feature region*/
+  
+  @media (max-width: 1200px) {
+    #home-page #feature div {
+      max-width: 800px;
+  }
+  }
+   
+  @media (max-width: 768px) {
+    #home-page #feature .right .carousel-control {
+      max-height: 200px;
+      text-align: center;
+      padding: 0 2em;
+    }
+  }
+  
+  .alert-top {
+    margin-bottom: 0;
+  }
