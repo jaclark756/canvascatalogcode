@@ -1,0 +1,540 @@
+/* --- START HEADER --- */
+
+/*Modify the header background for all catalog pages.*/
+#app-header {
+	padding: 0;
+	height: 100px;
+	background-color: #fff;
+}
+
+/* Modify the layout of the header contents*/
+#app-header .container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*Modify the account logo in the header*/
+/*any header logo uploaded in a catalog will override this option*/
+#app-header .logo a {
+	background-size: 212px 29px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	width: 212px;
+	height: 53px;
+}
+
+#app-header h1 {
+	margin:10px 0;
+}
+
+/* --- END HEADER --- */
+
+
+
+/* --- START FOOTER --- */
+
+/*Format the footer for all catalog pages*/
+#app-footer{
+	background-color: #135eab;
+}
+
+#app-footer a, #app-footer ul {
+	background-color: #135eab;
+	padding-top: 15px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.piped-list>li:before {
+	margin-right: 8px;
+	content: "|";
+	color: #ffffff;
+}
+
+/*Format the second row of copyright information*/
+.small {
+	background-color: #135eab;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+/* --- END FOOTER --- */
+
+
+
+/* --- START NAVIGATION --- */
+
+/* User-nav includes changes to the Login / User information link */
+#user-nav {
+	padding-top:25px;
+}
+
+#user-nav > a {
+	display:inline-block;
+	margin-bottom:0;
+	font-weight:normal;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	background-image:none;
+	border:1px solid transparent;
+	white-space:nowrap;
+	padding:5px 10px;
+	font-size:14px;
+	line-height:1.428571429;
+	border-radius:4px;
+	-webkit-user-select:none;
+	color:#135eab;
+}
+
+#user-nav > a:hover {
+	text-decoration:none;
+	color:#e63d2f;
+}
+
+/* Active Color of Login button once logged in */
+.header-nav li a {
+	color:#135eab;
+}
+
+/* Page Links refers to the custom links */
+#page-links {
+	display:inline-block;
+}
+
+#page-links a {
+	display:inline-block;
+	padding-right: 10px;
+	font-size:14px;
+	color:#135eab;
+}
+
+#page-links a:hover,
+.btn-link:hover,
+.btn-link {
+	color:#135eab;
+}
+
+#page-links .piped-list>li:after {
+	content:"|";
+	color:#135eab;
+}
+
+#page-links .piped-list>li:before {
+	display:none;
+	margin-right:0;
+}
+
+/* --- END NAVIGATION --- */
+
+
+
+/*--- START ROOT  --- */
+
+/* -- START ROOT FEATURE -- */
+
+
+/*Modify the home page feature area background*/
+#home-page .feature-region {
+	height:  400px;
+	margin: auto;
+	background-image: url("http://wid.mccinfo.net/catalog/trainingandcertificationbanner.svg");
+	background-size:  cover;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	background-color: #97aed2;
+ }
+
+/*Modify the layout for the contents of the feature area background*/
+#home-page #feature div {
+	max-width: 1000px;
+	padding-top: 48px;
+	margin: auto;
+	color: #97aed2;
+}
+
+/* -- END ROOT FEATURE -- */
+
+/* -- START SEARCH FORM -- */
+/* Modify the feature bottom background color */
+#search-form.callout-region {
+	background-color: #135eab;
+}
+
+#search-form .search-submit {​​
+color: #135eab;
+}​​
+
+#search-form .search-label,
+#search-form .search-box-wrapper {
+    visibility: visible;
+}
+
+#search-refine-button--refine {
+    display: inline-block;
+}
+
+#search-refine-button--categories {
+    display: inline-block;
+}
+
+/* -- END SEARCH FORM -- */
+
+/*Hide product dates on listing tiles on catalog */
+.product-dates {
+	display: none;
+}
+
+/*Hide product free flag on top of the listing file */
+.jqFlag {
+	display: none;
+}
+
+/*Hides enrollment has closed message on listing hero*/
+.hero-region p {
+	display: none;
+}
+
+.btn.btn-info.Products__LoadMore {
+	background-color: #135eab;
+	border-color: #135eab;
+}
+
+.product-tile .product-footer {
+	color: #135eab;
+}
+
+
+.product-price {
+	display:  none;
+}
+
+/* Hover effect on bottom of tiles */
+.product-tile:hover {
+	box-shadow: inset 0px -5px 0px #135eab !important;
+}
+
+/* --- END ROOT --- */
+
+
+
+/* --- START LISTINGS --- */
+
+/* -- START LISTINGS FEATURE -- */
+
+/*Format the listing page feature area background*/
+#product-page #feature {
+	background: #135eab;
+	padding-top: 20px;
+}
+
+/*Format the background inside the feature area*/
+.new-layout .product-bg {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #97aed2;
+}
+
+/*Listing title*/
+.new-layout .hero-head.h1 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+/*Hide enrollment message on listing and self-paced*/
+.ProductEnrollment__Notice {
+	display: none;
+}
+
+.new-layout .detail-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: 35px;
+}
+
+.new-layout .detail-blocks div {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 35px 10px 0;
+	height: 95px;
+	width: 130px;
+	text-align: center;
+	background-color: rgb(230,231,232);
+	background-image: url(http://pub-images.canvasnetwork.com/background_course-details.gif);
+	background-repeat: no-repeat;
+	background-position: -35px 0;
+}
+
+.new-layout .detail-blocks h5 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	color: rgb(70,70,70);
+}
+
+.new-layout .detail-blocks p {
+	font-family: "proxima nova light", arial, sans-serif;
+	font-size: 14px;
+}
+
+/* -- END LISTINGS FEATURE -- */
+
+/* -- START LISTINGS MAIN -- */
+
+/*Format the full course or program description area*/
+#main {
+	color: #333333;
+	background-color: white;
+	min-height: 200px;
+}
+
+.new-layout p {
+	line-height: 1.25;
+}
+
+/* Controls size of MCCWID logo on listings */
+.product-account-logo[src*=".svg"] {
+	min-height: 100px;
+	display: block;
+	margin: 16px auto;
+}
+
+.new-layout .main-column h3,
+.new-layout .side-column h3 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 21px;
+	text-transform: uppercase;
+	color: rgb(70,70,70);
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 21px;
+}
+
+.new-layout .instructor {
+	height: 120px;
+	width: 120px;
+}
+
+.new-layout .instructor-info {
+	border-bottom: solid 1px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+.new-layout .instructor-container > div:first-of-type {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.new-layout .instructor-name { 
+	align-self: flex-end; 
+}
+
+.new-layout .instructor-name h4 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: rgb(70,70,70);
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+.new-layout .instructor-name p {
+	font-family: "proxima nova light", arial, sans-serif;
+	font-size: 12px;
+	text-transform: none;
+	display: block;
+	margin: 0;
+	margin-left: 15px;
+}
+
+/* - START ACCORDION - */
+
+/*Accordion CSS is for drop-down course menu on the listings*/
+.accordion a {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #333333;
+	font-size: 14px;
+	padding-bottom: 10px;
+	line-height: 1.25;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+	cursor: pointer;
+	color: #333333;
+	text-decoration: none;
+}
+
+.accordion a::after {
+	content: ' ⯆';
+	position: absolute;
+	float: right;
+	right: 0rem;
+	font-size: 14px;
+	color: #000;
+	width: 30px;
+	height: 30px;
+	text-align: right;
+}
+
+.accordion a.active::after {
+	content: " ⯅";
+	color: #333333;
+}
+
+.accordion span {
+	color: #333333;
+}
+
+.accordion span:hover,
+.accordion span:hover::after {
+	cursor: pointer;
+}
+
+.accordion .content {
+	opacity: 0;
+	padding: 0 1rem;
+	max-height: 0;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	clear: both;
+	-webkit-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	color: #333333;
+}
+
+.accordion .content p {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.accordion .content.active {
+	opacity: 1;
+	max-height: 100%;
+	-webkit-transition: all 0.35s ease-out;
+	-o-transition: all 0.35s ease-out;
+	transition: all 0.35s ease-out;
+}
+
+.new-layout .course-information .accordion-item a {
+	color: #333333;
+}
+
+.new-layout .course-information .accordion-item a.link {
+	color: #135eab;
+}
+
+.new-layout .course-information a {
+color: #135eab;
+font-weight: 700;
+}
+
+/* - END ACCORDION - */
+
+/* - START BUTTONS - */
+
+a.button {
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #135eab;
+	padding: 10px;
+	color: #fff !important;
+	background-color: #135eab;
+	font-size: inherit;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	box-shadow: 0px 3px 6px #000;
+	font-family: inherit;
+	width: 150px;
+	text-align: center;
+}
+
+a.contact-btn {
+	display: inline-block;
+}
+
+a.button:hover {
+	background-color: initial;
+	color: #135eab !important;
+	text-decoration: none;
+}
+
+/* - END BUTTONS - */
+
+/* -- END LISTINGS MAIN -- */
+
+/* --- END LISTINGS --- */
+
+
+
+/* --- START MEDIA --- */
+/*MEDIA FORMATTING rules for responsive devices. This coding is optional but helpful for tablets and mobile devices.*/
+
+/*Media for header*/
+
+@media (max-width: 768px) {
+	#app-header .header-nav {
+		background: #ffffff;
+}
+}
+
+/*Media for feature region*/
+
+@media (max-width: 1200px) {
+	#home-page #feature div {
+		max-width: 800px;
+}
+}
+ 
+@media screen and (max-width: 990px) {
+	.new-layout .instructor-info > div:first-child { 
+		justify-content: flex-start; 
+	}
+	
+	.new-layout .instructor { 
+		margin-right: 20px; 
+	}
+}
+
+@media screen and (max-width: 614px) {
+	.new-layout .detail-blocks {
+		width: 340px;
+		margin: auto;
+	}
+
+	.new-layout .detail-blocks div {
+		width: 140px;
+		background-position: -30px 0;
+	}
+
+@media screen and (max-width: 991px) {
+	.new-layout .product-bg {
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+
+	.new-layout .detail-blocks {
+		max-width: 420px;
+		margin: auto;
+	}
+}
+
+/* --- END MEDIA --- */
